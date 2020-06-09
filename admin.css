@@ -1,0 +1,214 @@
+#admin,
+#topic,
+#edit {
+  border-top: solid 2px var(--color-five);
+}
+
+#admin #sectionwrapper,
+#topic #sectionwrapper {
+  background-color: white;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 10% auto 10%;
+  overflow: hidden;
+  border: solid 3px lightgrey;
+  border-radius: 10px;
+}
+
+#admin #sectionwrapper section,
+#topic #sectionwrapper section {
+  overflow: auto;
+  grid-row: 2;
+}
+
+#admin #sectionwrapper section:nth-of-type(1) > * {
+  flex-basis: 350px;
+  height: fit-content;
+  margin-bottom: 5%;
+  border: solid 3px lightgrey;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#admin #sectionwrapper section:nth-of-type(1) {
+  grid-column: 1;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#admin #sectionwrapper section:nth-of-type(2),
+#topic #sectionwrapper section:nth-of-type(2) {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  display: grid;
+  grid-template-rows: 10% auto 10%;
+  justify-items: center;
+  border-left: solid 3px lightgrey;
+}
+#admin #sectionwrapper section:nth-of-type(2) button {
+  grid-row: 2;
+  width: fit-content;
+}
+
+#topic #sectionwrapper section:nth-of-type(2) a {
+  grid-row: 2;
+}
+
+#topic #sectionwrapper section:nth-of-type(2) a button {
+  width: fit-content;
+}
+
+#admin .course div:nth-of-type(1) {
+  height: 300px;
+  background-image: url(assets/courseBG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#admin .course div:nth-of-type(2) {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* BELOW CSS ONLY FOR STYLIND OF TOPICS */
+
+#topic .topic {
+  width: 90%;
+  height: fit-content;
+  /* background-color: lightblue; */
+  border: solid 3px lightgrey;
+  border-radius: 5px;
+  padding: 0 2%;
+  margin-bottom: 1%;
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-columns: 3fr auto auto;
+  align-items: center;
+}
+
+#topic #sectionwrapper section:nth-of-type(1) {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* BELOW ONLY APPLIES FOR THE DELETE MODAL WINDOW */
+
+.modalBackground {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalWindow {
+  width: fit-content;
+  border: solid 3px lightgrey;
+  border-radius: 10px;
+  background-color: white;
+  padding: 1%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto) 70px;
+  justify-items: center;
+  align-items: center;
+  grid-row-gap: 5px;
+}
+
+.modalWindow > * {
+  margin: 0;
+  grid-column: 1 / span 2;
+}
+
+.modalWindow div {
+  align-self: end;
+  padding-bottom: 2%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 5px;
+}
+.modalWindow div > * {
+  width: 100%;
+}
+
+/* BELOW IS FOR EDIT/CREATE PAGE */
+
+#edit #sectionwrapper {
+  background-color: white;
+  height: 70vh;
+  overflow: hidden;
+  border: solid 3px lightgrey;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+#edit #sectionwrapper section {
+  overflow: auto;
+}
+
+#edit #sectionwrapper section:nth-of-type(1) {
+  height: 100%;
+}
+
+#edit #sectionwrapper section:nth-of-type(2) {
+  padding: 2%;
+}
+
+#edit #sectionwrapper section:nth-of-type(1) nav {
+  height: inherit;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(5, 42px) 1fr;
+  overflow: hidden;
+  background-color: rgba(74, 58, 99, 0.4);
+}
+
+#edit #sectionwrapper section:nth-of-type(1) nav > button {
+  width: 160px;
+  border-radius: 0;
+  border-bottom: solid 3px lightgrey;
+  outline: none;
+  background-color: transparent;
+  text-align: right;
+}
+
+#edit #sectionwrapper section:nth-of-type(1) nav div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#edit #sectionwrapper section:nth-of-type(1) nav div button {
+  width: 100%;
+}
+
+#edit #sectionwrapper section:nth-of-type(1) nav .active_tab {
+  background-color: white;
+  border-bottom: none;
+}
+
+#quiz,
+#topicName {
+  display: grid;
+  grid-row-gap: 10px;
+}
+
+#quiz label,
+#topicName label {
+  font-family: var(--primary-font);
+  font-size: 1.2em;
+}
+
+#quiz input,
+#topicName input {
+  font-family: var(--secondary-font);
+}

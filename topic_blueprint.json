@@ -1,0 +1,48 @@
+[
+  {
+    "topicHeader": "TEXT",
+    "introduction": {
+      "para1": "TEXT",
+      "para2": "TEXT",
+      "para3": "TEXT"
+    },
+    "example": {
+      "example_topic_headline": "IS A H3 tag",
+      "example_paragraph_headline1": "IS p - bold text",
+      "example_paragraph_headline_bullet1": "Shouldn't be UL-LI tags but should be done with CSS if possible",
+      "example_paragraph_headline_bullet2": "Shouldn't be UL-LI tags but should be done with CSS if possible",
+      "example_image1": "example_image1",
+      "example_para1": "TEXT",
+      "example_image2": "example_image2",
+      "example_para2": "TEXT",
+      "example_image3": "example_image2",
+      "example_paragraph_headline2": "IS p - bold text",
+      "example_paragraph_headline_bullet3": "Shouldn't be UL-LI tags but should be done with CSS if possible",
+      "example_paragraph_headline_bullet4": "Shouldn't be UL-LI tags but should be done with CSS if possible",
+      "example_image4": "example_image2",
+      "example_para3": "TEXT",
+      "example_image5": "example_image2",
+      "example_para4": "TEXT",
+      "example_paragraph_headline3": "IS p - bold text",
+      "example_paragraph_headline_bullet5": "Shouldn't be UL-LI tags but should be done with CSS if possible",
+      "example_paragraph_headline_bullet6": "Shouldn't be UL-LI tags but should be done with CSS if possible",
+      "example_image6": "example_image2",
+      "example_para5": "TEXT",
+      "example_image7": "example_image2",
+      "example_para6": "TEXT",
+      "example_paragraph_headline4": "IS p - bold text",
+      "example_para7": "TEXT"
+    },
+    "summery": {
+      "summery_headline": "IS A H3 tag",
+      "explanation": "It's for querieng!"
+    },
+    "quiz": {
+      "question": "When you ask for data via an SQL query, how do you add a conditions to your search?",
+      "answer_1": "With the WHERE syntax",
+      "answer_2": "With the COND syntax",
+      "answer_3": "Altering the database",
+      "answer_4": "With ID's in the database"
+    }
+  }
+]

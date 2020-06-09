@@ -1,0 +1,30 @@
+[
+  {
+    "shortDescription": "How to querrie and CRUD",
+    "introduction": {
+      "para1": "For accessing databases and manipulating data, you need a different language than what your web service need.SQL (Structure Query Language), is what is used to ask for information or action from your database. The difference between whatever coding language that your web service is made with, and SQL, is that SQL is getting tasks based on it’s code, more than simply building with it.",
+      "para2": "For an example: If you simply store your users in a JSON file on the website itself, you simply fetch the data at hand with whatever tool you’re using. The data you now have locally is simply a big ol’ pile of data, of which the program now has to sift through, and look for what exactly you need.",
+      "para3": "With SQL however, you can simply ask more specifically for what data you want from your database. For an example, instead of getting everything from your database, you set some criteria for the data you want back from your request. So if you want every customer who purchased vanilla ice-cream in your store, who is older than 35 and lives in Oklahoma, with more than 2 children, if your database has the information, you can ask for that!",
+      "para4": "So how do you do that?"
+    },
+    "quiz": {
+      "question": "When you ask for data via an SQL query, how do you add a conditions to your search?",
+      "answer_1": "With the WHERE syntax",
+      "answer_2": "With the COND syntax",
+      "answer_3": "Altering the database",
+      "answer_4": "With ID's in the database"
+    },
+    "example": {
+      "example_headline1": "Here's how you Crud!",
+      "example_image1": "example_image1",
+      "example_headline2": "Here's an example",
+      "example_image2": "example_image2",
+      "example_explanation": "INSERT AN EXPLANATION"
+    },
+    "summery": {
+      "information": "So what have you learned?",
+      "summery_image1": "summery_image1",
+      "explanation": "It's for querieng!"
+    }
+  }
+]

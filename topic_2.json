@@ -1,0 +1,51 @@
+[
+  {
+    "topicHeader": "What is a database normalization?",
+    "introduction": {
+      "para1": "Normalization is the structuring of database tables by applying specific rules that each table must satisfy in order to make sure they are of a proper relational design. You do this in order to make sure the database has a minimum number of duplicate data, is easy to navigate through and is easy to maintain. When normalizing tables, they can achieve different tiers of “normal form”. When database tables adhere to the first rule, they’ve reached the first tier of normal form which is appropriately called “1st normal form”. The different rules are applied sequentially, which means that 3rd normal form can’t be achieved before 2nd normal form, and 2nd normal form can’t be achieved before 1st normal form.",
+      "para2": "There are several tiers of normal form, but it is generally accepted that reaching 3rd normal form will be adequate for most database purposes.",
+      "para3": ""
+    },
+    "example": {
+      "example_topic_headline": "The rules of normalization?",
+      "example_paragraph_headline1": "1st normal form (1NF)",
+      "example_paragraph_headline_bullet1": "Each field must only store one value / piece of data",
+      "example_paragraph_headline_bullet2": "",
+      "example_image1": "image",
+      "example_para1": "The “Companies” table does not comply with 1NF since there are several values (names) in each field in the “Contact” column.",
+      "example_image2": "",
+      "example_para2": "The “Companies” table complies with 1NF since there are no more than one value in any field in any column.",
+      "example_image3": "",
+      "example_paragraph_headline2": "2nd normal form (2NF)",
+      "example_paragraph_headline_bullet3": "Conditions for 1st normal form must be satisfied",
+      "example_paragraph_headline_bullet4": "All attributes should be dependent exclusively on the primary key",
+      "example_image4": "image",
+      "example_para3": "If all your tables has one primary key that is not a composite primary key, you tables will already comply with 2NF.",
+      "example_para4": "The “Orders” table does not comply with 2NF since the “Manufacturer” column is not dependent on both of the columns that the primary key consists of. Here’s why:",
+      "example_para5": "The “Quantity” column tells us how many of a single product was ordered in a specific order. The “Quantity” column is useless without the “OrderId” column, because without it you would not know to which order the quantity of any given item belonged. Also, without the “Product” column, you would not know to which product the quantity was referring. Therefore the “Quantity” column is dependent on both of the columns that makes up the composite primary key. ",
+      "example_para6": "However the “Manufacturer” column is only dependent on the “Product” column. If you did not have the “OrderId” column, you could still tell that the manufacturer of Rainbow Mouse is RGB Gamers League. Therefore the “manufacturer” column is only dependent on the “Product” column.",
+      "example_image5": "",
+      "example_para7": "The “Orders” table complies with 2NF since all columns are exclusively dependent on the primary key.",
+      "example_paragraph_headline3": "3rd normal form (3NF)",
+      "example_paragraph_headline_bullet5": "Conditions for 2nd normal form must be satisfied",
+      "example_paragraph_headline_bullet6": "Non-key attributes are independent from any other non-key field",
+      "example_image6": "image",
+      "example_para8": "The “Customers” table does not comply with 3NF since the “State” column and the “State Abbreviation” column are dependent on each other, and in other words, they basically tell us the same piece of information.",
+      "example_image7": "image",
+      "example_para9": "The “Customers” table now complies with 3NF.",
+      "example_paragraph_headline4": "",
+      "example_para10": ""
+    },
+    "summery": {
+      "summery_headline": "Why do you need to normalize a database?",
+      "explanation": "Normalization is how you optimize your database by making sure your tables comply with specific rules. Each normal form is reached sequentially. "
+    },
+    "quiz": {
+      "question": "When you ask for data via an SQL query, how do you add a conditions to your search?",
+      "answer_1": "With the WHERE syntax",
+      "answer_2": "With the COND syntax",
+      "answer_3": "Altering the database",
+      "answer_4": "With ID's in the database"
+    }
+  }
+]

@@ -1,0 +1,17 @@
+{
+    "ERD": "Entity Relationship Diagram",
+    "ER": "Entity Relationship",
+    "Tuple": "a row in a database table",
+    "Attribute": "a column in a database table",
+    "Cardinality": "the entity realtionship between tables",
+    "SSN": "Social security number",
+    "Normalization": "Making a table satisfy normal forms",
+    "Normal form": "Differently leveled states of structure and organization that a table in a database can sequentially satisfy",
+    "Primary key": "An attribute in a table where all values are unique",
+    "Concatenated primary key": "A primary key made up of two or more attributes. Also called a composite key",
+    "Foreign key": "An attribute in a table that acts as primary key in another table",
+    "SQL": "Structured Query Language",
+    "C.R.U.D": "Create, Read, Update & Delete",
+    "PHP": "Scripting language sutied for web-development",
+    "XAMPP": "A free and open-source cross-platform web server solution stack package"
+}

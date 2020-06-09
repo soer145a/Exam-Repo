@@ -1,0 +1,51 @@
+[
+  {
+    "topicHeader": "What is an ERD?",
+    "introduction": {
+      "para1": "ERD is an abbreviation of “Entity Relationship Diagram”. An ERD is a flowchart-like diagram that visualizes the internal relationship between entities within a database.",
+      "para2": "ER diagrams are used when modelling and designing relational databases and helps with conceptualize otherwise abstract elements or ideas. That way it is easier to discuss and understand the relation between entities.",
+      "para3": "The entities in an ERD are tangible objects, such as a person, object or event, that can have data stored about it. An entity can be thought of as a noun like a person, a car, a customer. Each entity is a tuple (a row) inside a table and the relation between an entity in one table to a different entry in another table is the relationship between the entities - that’s why it’s called an “Entity Relationship Diagram”."
+    },
+    "example": {
+      "example_topic_headline": "Relationships explained",
+      "example_paragraph_headline1": "",
+      "example_paragraph_headline_bullet1": "",
+      "example_paragraph_headline_bullet2": "",
+      "example_image1": "image",
+      "example_para1": "The image above is an ERD for a database where pictures are being stored. The ERD consists of 3 tables where the entities has a relationship with each other. The relationships, in an ERD, describes how entities interact with each other and is also referred to as cardinality.",
+      "example_image2": "",
+      "example_para2": "There are 3 main types of relationships between entities in an ERD:",
+      "example_image3": "image",
+      "example_paragraph_headline2": "One-to-one",
+      "example_paragraph_headline_bullet3": "",
+      "example_paragraph_headline_bullet4": "",
+      "example_image4": "",
+      "example_para3": "This is the simplest type of the relationships. Here is an entity in table A associated with another entity in table B. An example could be that a person in table A has a one and only one social security number which is stored in table B. That would be a one-to-one relation since a person can have one and only one SSN and a SSN can only be connected to one person.",
+      "example_para4": "",
+      "example_para5": "",
+      "example_para6": "",
+      "example_image5": "",
+      "example_para7": "",
+      "example_paragraph_headline3": "One-to-many",
+      "example_paragraph_headline_bullet5": "",
+      "example_paragraph_headline_bullet6": "",
+      "example_image6": "",
+      "example_para8": "This one is a bit different than the one-to-one relation. Here can an entity in table A be connected to several entities in table B. An example of this is in the above image. A picture in the pictures table can only have one location, but a location in the locations table can be in many pictures. That means that the cardinality is a one-to-many from the locations table to the pictures table.",
+      "example_image7": "",
+      "example_para9": "",
+      "example_paragraph_headline4": "Many-to-many",
+      "example_para10": "This is similar to the one-to-many relationship. Here can an entity in table A be associated to several entities in table B. An example of this is in the image above. The relationship between the entities in the people table and in the pictures table is a many-to-many relationship. A person can be in many pictures and one picture can have many people in it."
+    },
+    "summery": {
+      "summery_headline": "So what is an ERD?",
+      "explanation": "An ERD is a tool to design and model a database. It makes it easier to understand complex concepts, by visualising relationships between entities."
+    },
+    "quiz": {
+      "question": "When you ask for data via an SQL query, how do you add a conditions to your search?",
+      "answer_1": "With the WHERE syntax",
+      "answer_2": "With the COND syntax",
+      "answer_3": "Altering the database",
+      "answer_4": "With ID's in the database"
+    }
+  }
+]

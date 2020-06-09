@@ -1,0 +1,16 @@
+#glossaryMainContent {
+  font-family: var(--secondary-font);
+  line-height: 30px;
+}
+
+#glossaryMainContent {
+  border-top: solid 2px var(--color-five);
+}
+
+#glossaryMainContent section .container {
+  border: 2px solid lightgray;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2%;
+  height: 500px;
+}

@@ -1,0 +1,94 @@
+#profile {
+    border-top: solid 2px var(--color-five);
+}
+
+#pFirstName, #pLastName, #pEmail, #pUsername, #pPassword {
+    font-weight: 400;
+    font-family: var(--primary-font);
+}
+
+#frmEditProfile input {
+    font-family: var(--secondary-font);
+    width: 100%;
+    background-color: white;
+    border: solid 2px rgba(230, 230, 230, 0.8);
+    border-radius: 5px;
+    height: 30px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+}
+
+#frmEditProfile label {
+    font-family: var(--primary-font);
+    margin: 0px;
+    padding: 0px;
+}
+
+#frmEditProfile p {
+    font-family: var(--primary-font);
+    margin: 0px;
+    padding: 0px;
+}
+
+#profileContent {
+    font-family: var(--primary-font);
+    border: 2px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    padding-right: 60px;
+    padding-left: 40px;
+    padding-top: 40px;
+    flex-basis: 450px;
+    min-height: 450px;
+    width: 40%;
+}
+
+::placeholder {
+    opacity: 0.6;
+}
+
+#deleteModalContent {
+    width: 30%;
+    top: 30%;
+    background-color: white;    
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    left: 30%;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    padding-left: 40px; 
+    padding-right: 60px;   
+}
+
+#deleteModalContent p {
+    font-weight: 300;
+}
+
+#frmDeleteUser input{
+    font-family: var(--secondary-font);
+    width: 100%;
+    background-color: white;
+    border: solid 2px rgba(230, 230, 230, 0.8);
+    border-radius: 5px;
+    height: 30px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+}
+
+
+#frmDeleteUser label {
+    font-weight: 600;
+    font-family: var(--primary-font);
+    margin: 0px;
+    padding: 0px;
+}
+
+#frmDeleteUser p {
+    font-weight: 600;
+    font-family: var(--primary-font);
+    margin: 0px;
+    padding: 0px;
+}

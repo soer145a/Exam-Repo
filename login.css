@@ -1,0 +1,59 @@
+#frmLogIn {
+    border: solid 3px #e6e6e6;
+    width: 350px;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    padding-right: 80px;
+    padding-left: 40px;
+    padding-top: 40px;
+    margin: auto;
+    font-family: var(--primary-font);
+    background-color: white;
+}
+
+#frmLogIn input {
+    font-family: var(--secondary-font);
+    width: 100%;
+    background-color: white;
+    border: solid 2px rgba(230, 230, 230, 0.8);
+    border-radius: 5px;
+    height: 30px;
+    padding: 5px;
+}
+
+#frmLogIn p {
+    font-family: var(--primary-font);
+    text-align: left;
+    font-weight: 550;
+    margin: 0px;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+::placeholder {
+    opacity: 0.6;
+}
+
+#loginMainContent {
+    border-top: solid 2px black;
+    padding-top: 50px;
+    text-align: center;   
+    
+}
+
+#frmLogIn h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+#frmLogIn button {
+    font-family: var(--secondary-font);
+    margin-top: 30px;
+    background-color: var(--color-six);
+    color: white;
+}
+
+#frmLogIn button:hover {
+    background-color: var(--color-six-hover);
+}

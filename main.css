@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#divContentContainer {
+  width: 85%;
+  margin: auto;
+  border: solid 2px #e6e6e6;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 65fr 35fr;
+  padding-left: 20px;
+  max-height: 700px;
+}
+
+.btnDropdown {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-top: solid 2px #e6e6e6;
+  border-bottom: solid 2px #e6e6e6;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  color: black;
+}
+
+.btnDropdown:hover,
+.btnDropdown:focus {
+  background-color: #e6e6e6;
+}
+
+#divContent {
+  border-right: solid 2px #e6e6e6;
+  max-height: 700px;
+  display: grid;
+  grid-template-rows: 90fr 10fr;
+}
+
+#divInjectContentHere {
+  overflow: auto;
+  padding-right: 20px;
+}
+
+#divInjectContentHere img {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+#divNavigation {
+  padding: 0px;
+  padding-left: 0px;
+  margin-left: 0px;
+  overflow: auto;
+  max-height: 700px;
+}
+
+#divNavigation a:hover {
+  background-color: #e6e6e6;
+}
+
+.dropdown-content {
+  display: none;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+#divNavigationButtons {
+  border-top: solid 2px #e6e6e6;
+  color: black;
+  width: 100%;
+}
+
+#divQuiz {
+  width: 75%;
+  margin: auto;
+  border: solid 2px #e6e6e6;
+  border-radius: 10px;
+  padding-left: 20px;
+  display: grid;
+  grid-template-rows:
+    15fr 10fr 10fr
+    10fr 10fr 15fr;
+}
+
+#buttonSubmit {
+  width: 160px;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #1bc47d;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  width: 80px;
+}
+
+#buttonNext,
+#buttonBack {
+  float: right;
+  margin: 10px;
+}
+
+.show {
+  display: grid;
+  grid-template-rows: 10fr 10fr 10fr;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  padding: 20px;
+}
+
+i.fa.fa-chevron-right,
+i.fa.fa-chevron-down,
+i.fa.fa-chevron-up {
+  float: right;
+}
+
+i.fa.fa-chevron-left {
+  float: left;
+}
+
+body {
+  background: rgb(61, 255, 0);
+  background: linear-gradient(
+    230deg,
+    rgba(61, 255, 0, 1) 0%,
+    rgba(0, 168, 255, 1) 48%,
+    rgba(0, 13, 20, 1) 100%
+  );
+}
+header {
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+}
+#topNav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.active {
+  background-color: cyan;
+}
+.topNavItem {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+main {
+  width: 100%;
+  height: 80vh;
+}
+footer {
+  height: 10vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#mainContent {
+  width: 65vw;
+  height: 70vh;
+  position: relative;
+  top: 2.5vw;
+  left: 2vw;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+#sideContent {
+  overflow-y: scroll;
+  position: relative;
+  bottom: 31.7vw;
+  left: 72vw;
+  width: 25vw;
+  height: 70vh;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.topicItem {
+  background-color: hotpink;
+  border: solid black 2px;
+  padding: 0.5vw;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  cursor: pointer;
+}
+.topicItem:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.topicNumber {
+  margin-left: 1vw;
+  font-size: 2.8em;
+}
+.topicText {
+  font-size: 1.7em;
+}
+.topicExtension {
+  font-size: 1.3em;
+  margin-left: 1vw;
+}
+#deleteModalWindow {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  top: 0;
+  left: 0;
+}
+#deleteModalContent {
+  height: 40vh;
+  width: 50vw;
+  top: 25vh;
+  background-color: white;
+  border: solid black 1vw;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  left: 25vw;
+}
+.questionBox {
+  border: solid 2px black;
+  margin: 2vw;
+}
+.questionBox > p {
+  margin: auto;
+}
+#questionContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 20vw;
+}
+.greyAnswer {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.correctAnswer {
+  background-color: lightgreen;
+}
+.wrongAnswer {
+  background-color: red;
+}

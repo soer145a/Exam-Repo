@@ -1,0 +1,51 @@
+[
+  {
+    "topicHeader": "What is a relational database?",
+    "introduction": {
+      "para1": "A relational database is a database consisting of two or more tables that each are related to one or more of the other tables in the database. They create relationships between one another by referring to columns, also called attributes, in different tables.",
+      "para2": "",
+      "para3": ""
+    },
+    "example": {
+      "example_topic_headline": "How does a relational database work?",
+      "example_paragraph_headline1": "",
+      "example_paragraph_headline_bullet1": "",
+      "example_paragraph_headline_bullet2": "",
+      "example_image1": "image",
+      "example_para1": "Three database tables are shown above. Each of these tables are part of a relational database. The “People” table and the “Pictures” table refer to one another by sharing the column “PictureId”. Also, the “Locations” table and the “Pictures” table refer to on another by sharing the “LocationId” column. We can use the “LocationId” column in the “Pictures” table to find out where a picture was taken, by finding the matching locationId value in the “LocationId” column in the “Locations” table. Likewise, we can find out which people are in a picture by using the “PictureId” column in the “Pictures” and “People” tables.",
+      "example_image2": "",
+      "example_para2": "",
+      "example_image3": "",
+      "example_paragraph_headline2": "",
+      "example_paragraph_headline_bullet3": "",
+      "example_paragraph_headline_bullet4": "",
+      "example_image4": "",
+      "example_para3": "",
+      "example_para4": "",
+      "example_para5": "",
+      "example_para6": "",
+      "example_image5": "",
+      "example_para7": "",
+      "example_paragraph_headline3": "",
+      "example_paragraph_headline_bullet5": "",
+      "example_paragraph_headline_bullet6": "",
+      "example_image6": "",
+      "example_para8": "",
+      "example_image7": "",
+      "example_para9": "",
+      "example_paragraph_headline4": "",
+      "example_para10": ""
+    },
+    "summery": {
+      "summery_headline": "So what is a relational database?",
+      "explanation": "A relational database has two or more tables that relates to each other, by having shared data in each separate table. If the “Locations” table didn’t have the “LocationId” column, the table would just be a list of cities and countries without any purpose. The same can be said about the “People” table and the “PictureId” column."
+    },
+    "quiz": {
+      "question": "When you ask for data via an SQL query, how do you add a conditions to your search?",
+      "answer_1": "With the WHERE syntax",
+      "answer_2": "With the COND syntax",
+      "answer_3": "Altering the database",
+      "answer_4": "With ID's in the database"
+    }
+  }
+]
